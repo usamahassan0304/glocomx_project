@@ -2,7 +2,10 @@ import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap';
 import Buttons from '../../../common/buttons';
 import Topbar from '../../navbar/topbar';
-import { IoBookOutline } from "react-icons/io5"
+import Updates from '../../updates/updates';
+import Works from '../../works/works';
+import Nft from '../../nft/nft';
+import { Progress } from 'antd';
 import {
     HeaderSecionStyle,
     HeaderLeftContentStyle,
@@ -13,12 +16,19 @@ import {
     HeadingTextStyle,
     PlainTextStyle,
     HeaderIcons,
-} from './headerStyle'
+    TimerSectionStyle,
+    TimerSectionHeadingStyle,
+    TimerBlockStyle,
+    TimerBlockSectionStyle,
+    NumericValueStyle,
+    StringValueStyle,
+    HeaderProgessbarStyle,
+} from './headerStyle';
 
 const Header: React.FC = () => {
     return (
         <>
-            <HeaderSecionStyle>
+            <HeaderSecionStyle id='shop'>
                 <Topbar />
                 <Container>
                     <Row>
@@ -40,11 +50,46 @@ const Header: React.FC = () => {
                                         innovation marketplace
                                     </p>
                                 </HeaderContentTextStyle>
-                                <Buttons btnTitle='Buy Now'/>
+                                <Buttons btnTitle='Buy Now' />
                             </HeaderLeftContentStyle>
                         </Col>
 
                         <Col lg={6}>
+
+                            <TimerSectionStyle>
+                                <TimerSectionHeadingStyle>Public Sale, Price $0.02</TimerSectionHeadingStyle>
+                            </TimerSectionStyle>
+
+                            <TimerBlockSectionStyle>
+                                <TimerBlockStyle>
+                                    <NumericValueStyle>15</NumericValueStyle>
+                                    <StringValueStyle>Days</StringValueStyle>
+                                </TimerBlockStyle>
+                                <TimerBlockStyle>
+                                    <NumericValueStyle>15</NumericValueStyle>
+                                    <StringValueStyle>Days</StringValueStyle>
+                                </TimerBlockStyle>
+                                <TimerBlockStyle>
+                                    <NumericValueStyle>15</NumericValueStyle>
+                                    <StringValueStyle>Days</StringValueStyle>
+                                </TimerBlockStyle>
+                                <TimerBlockStyle>
+                                    <NumericValueStyle>15</NumericValueStyle>
+                                    <StringValueStyle>Days</StringValueStyle>
+                                </TimerBlockStyle>
+                            </TimerBlockSectionStyle>
+
+                            <HeaderProgessbarStyle>
+                                <Progress
+                                    strokeColor={{
+                                        '0%': '#FFC300',
+                                        '60%': '#FFC300',
+                                    }}
+                                    percent={60}
+                                    strokeWidth={12}
+                                />
+                            </HeaderProgessbarStyle>
+
                         </Col>
                     </Row>
                 </Container>
@@ -59,7 +104,7 @@ const Header: React.FC = () => {
                                 <PlainTextStyle>
                                     <p>white paper</p>
                                 </PlainTextStyle>
-                                <Buttons btnTitle='Download'/>
+                                <Buttons btnTitle='Download' />
                             </Col>
                             <Col lg={4} className="text-center">
                                 <HeaderIcons />
@@ -69,7 +114,7 @@ const Header: React.FC = () => {
                                 <PlainTextStyle>
                                     <p>white paper</p>
                                 </PlainTextStyle>
-                                <Buttons btnTitle='Buy NFT'/>
+                                <Buttons btnTitle='Buy NFT' />
                             </Col>
                             <Col lg={4} className="text-center">
                                 <HeaderIcons />
@@ -79,13 +124,17 @@ const Header: React.FC = () => {
                                 <PlainTextStyle>
                                     <p>white paper</p>
                                 </PlainTextStyle>
-                                <Buttons btnTitle='Join Us'/>
+                                <Buttons btnTitle='Join Us' />
                             </Col>
                         </Row>
                     </Container>
                 </LowerHeaderSection>
 
             </HeaderSecionStyle>
+
+            <Updates />
+            <Works />
+            <Nft />
         </>
     )
 }

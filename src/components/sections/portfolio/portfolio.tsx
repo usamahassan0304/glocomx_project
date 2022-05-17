@@ -1,5 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import Startup from "../../startups/startup";
+import Sale from "../../sale/sale"
 
 import {
     PortfolioSectionStyle,
@@ -13,7 +15,7 @@ import {
 const Portfolio : React.FC = () => {
     return (
         <>
-            <PortfolioSectionStyle>
+            <PortfolioSectionStyle id='portfolio'>
                 <Container>
                     <PortfolioSectionHeadingStyle>
                         <h1 className='pt-5 pb-5'>Portfolio</h1>
@@ -67,6 +69,9 @@ const Portfolio : React.FC = () => {
                 </Container>
 
             </PortfolioSectionStyle>
+
+            <Startup />
+            <Sale />
         </>
     )
 }

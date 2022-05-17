@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const FaqSectionStyle = styled.div`
     background-color : #010024;
-    padding-bottom : 40px;
+    /* padding-bottom : 40px; */
 `;
 
 export const FaqHeadingStyle = styled.div`

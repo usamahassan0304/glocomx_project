@@ -23,6 +23,6 @@ export const TokenSectionImageStyle = styled.img.attrs({
 })`
     height : 300px;
     width : 350px;
-    border : 2px solid gray;
-    border-radius : 10px;
+    border-bottom: 2px solid gray;
+    border-left: 2px solid gray;
 `

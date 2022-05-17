@@ -75,3 +75,61 @@ export const MailIconStyle = styled(GoMail)`
     margin-bottom :10px;
 `;
 
+export const FormSectionStyle = styled.div`
+    border : 2px solid gray;
+    border-radius : 10px;
+    
+`;
+
+export const FieldsStyle = styled.div`
+    padding : 10px;
+`;
+
+export const EmailFieldSection = styled.div`
+    padding : 10px;
+`;
+
+export const InputStyle = styled.input`
+  font-size: 18px;
+  padding: 10px 20px;
+  width : 100%;
+  background: #23293B ;
+  border: none;
+  border-radius: 30px;
+  ::placeholder {
+    color: #FFFFFF;
+  }
+`;
+
+export const Emailinput = styled.input`
+    font-size: 18px;
+    padding: 10px 20px;
+    width : 100%;
+    background: #23293B ;
+    border: none;
+    border-radius: 30px;
+    ::placeholder {
+    color: #FFFFFF;
+  }
+`;
+
+export const TextareaField = styled.div`
+    padding : 10px;
+`;
+
+export const TextareaStyled = styled.textarea`
+    font-size: 18px;
+    padding: 10px 20px;
+    width : 100%;
+    height : 250px;
+    background: #23293B ;
+    border: none;
+    border-radius: 20px;
+    ::placeholder {
+    color: #FFFFFF;
+  }
+`;
+
+export const ButtonAreaStyle = styled.div`
+    padding : 10px;
+`; 

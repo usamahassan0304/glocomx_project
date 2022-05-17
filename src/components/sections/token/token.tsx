@@ -1,5 +1,6 @@
 import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap';
+import Model from '../../model/model'
 import { 
     TokenHeadingSectionStyle, 
     TokenSectionStyle,
@@ -10,7 +11,7 @@ import {
 const Token: React.FC = () => {
     return (
         <>
-            <TokenSectionStyle>
+            <TokenSectionStyle id='token'>
                 <Container>
                     <TokenHeadingSectionStyle>
                         <h1 className='pt-5 pb-5'>Tokens</h1>
@@ -39,6 +40,8 @@ const Token: React.FC = () => {
                     </Row>
                 </Container>
             </TokenSectionStyle>
+
+            <Model />
         </>
     )
 }

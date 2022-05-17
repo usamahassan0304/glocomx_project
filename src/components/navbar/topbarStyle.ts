@@ -16,12 +16,17 @@ export const TopbarSectionStyle = styled.div`
             &:hover {
                 color: #FFC300;
             }
+            Link{
+                text-decoration : none;
+            }
         }
     }
+
+    
 `;
 
 export const LogoStyle = styled.img.attrs({
-    src : `${logo}`
+    src: `${logo}`
 })`
     height:69px;
     width : 67px;

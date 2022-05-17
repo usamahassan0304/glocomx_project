@@ -11,7 +11,7 @@ import AccordianData from "../../../data/accordianData"
 const Faq: React.FC = () => {
     return (
         <>
-            <FaqSectionStyle>
+            <FaqSectionStyle id='faq'>
                 <Container>
                     <FaqHeadingStyle>
                         <h1 className='pt-5 pb-5'>Frequently Asked Questions(FAQ's)</h1>

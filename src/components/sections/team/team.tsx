@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
-import TeamImages from "../team/teamImages"
+import Advisors from '../../advisors/advisors'
+import TeamImages from "../team/teamImages";
 import {
     TeamSectionStyle,
     TeamHeadingStyle,
@@ -11,7 +12,7 @@ import TeamData from "../../../data/teamData";
 const Team: React.FC = () => {
     return (
         <>
-            <TeamSectionStyle>
+            <TeamSectionStyle id='team'>
                 <Container>
                     <TeamHeadingStyle>
                         <h1 className='pt-5 pb-5'>Team</h1>
@@ -29,6 +30,8 @@ const Team: React.FC = () => {
                     
                 </Container>
             </TeamSectionStyle>
+
+            <Advisors />
         </>
     )
 }
